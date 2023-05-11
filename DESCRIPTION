@@ -2,11 +2,14 @@ Package: analyze
 Title: This package helps in data analysis
 Version: 0.0.0.9000
 Authors@R: 
-    person("Eric", "Odongo", , "ericodongo.35@gmail.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+    person("Eric", "Odongo", , "ericodongo.35@gmail.com", role = c("aut", "cre"))
 Description: The package contains useful functions for doing statistical analysis and graphics.
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: 
+    stringr
