@@ -3,7 +3,7 @@ Title: Data analysis and graphics
 Version: 0.0.0.9000
 Authors@R: 
     person("Eric", "Odongo", , "ericodongo.35@gmail.com", role = c("aut", "cre"))
-Description: The package contains useful functions for doing summary statistics and graphics.
+Description: The package contains useful functions for doing summary statistics, frequency counts and graphics.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
@@ -15,7 +15,6 @@ Config/testthat/edition: 3
 Imports: 
     dplyr,
     janitor,
-    stats,
-    stringr
+    stats
 URL: https://github.com/rikoprogrammer/analyze
 BugReports: https://github.com/rikoprogrammer/analyze/issues
