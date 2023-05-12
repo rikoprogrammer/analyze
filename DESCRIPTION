@@ -1,9 +1,9 @@
 Package: analyze
-Title: This package helps in data analysis
+Title: Data analysis and graphics
 Version: 0.0.0.9000
 Authors@R: 
     person("Eric", "Odongo", , "ericodongo.35@gmail.com", role = c("aut", "cre"))
-Description: The package contains useful functions for doing statistical analysis and graphics.
+Description: The package contains useful functions for doing summary statistics and graphics.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

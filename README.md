@@ -1,10 +1,11 @@
 
-# analyze
+# Analyze
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of analyze is to help people to rapidly explore their data
+The goal of analyze is to help people to rapidly explore their data through
+summary statistics, frequency tabulation and visualizations
 
 ## Installation
 
@@ -17,14 +18,15 @@ devtools::install_github("rikoprogrammer/analyze")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example which shows you how request for summary statistics and frequency table:
 
 ``` r
 library(analyze)
 ## basic example code
 
-x <- "alfa,bravo,charlie,delta"
-str_split_one(x, pattern = ",")
-str_split_one(x, pattern = ",", n = 2)
+example_df = data.frame(x = rnorm(100), y = rnorm(100),
+gender = c(rep('F',35), rep('M',65)))
+summarize(example_df, var_list = c(x,y), data_type = 'continuous')
+summarize(example_df, var_list = gender, data_type = 'categorical')
 ```
 
