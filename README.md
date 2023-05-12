@@ -1,5 +1,5 @@
 
-# Analyze
+# analyze
 
 <!-- badges: start -->
 <!-- badges: end -->
