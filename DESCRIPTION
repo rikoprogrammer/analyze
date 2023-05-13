@@ -14,7 +14,11 @@ Suggests:
 Config/testthat/edition: 3
 Imports: 
     dplyr,
+    ggplot2,
     janitor,
     stats
 URL: https://github.com/rikoprogrammer/analyze
 BugReports: https://github.com/rikoprogrammer/analyze/issues
+Depends: 
+    R (>= 2.10)
+LazyData: true
