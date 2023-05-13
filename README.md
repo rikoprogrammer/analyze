@@ -18,7 +18,7 @@ devtools::install_github("rikoprogrammer/analyze")
 
 ## Example
 
-This is a basic example which shows you how request for summary statistics and frequency table:
+This is a basic example which shows you how request for summary statistics and frequency table and also produce request for a graph
 
 ``` r
 library(analyze)
