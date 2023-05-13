@@ -24,9 +24,16 @@ This is a basic example which shows you how request for summary statistics and f
 library(analyze)
 ## basic example code
 
-example_df = data.frame(x = rnorm(100), y = rnorm(100),
-gender = c(rep('F',35), rep('M',65)))
-summarize(example_df, var_list = c(x,y), data_type = 'continuous')
-summarize(example_df, var_list = gender, data_type = 'categorical')
+# Summary stats and frequency counts
+
+analyze::summarize(example_df, var_list = c(x,y), data_type = 'continuous')
+analyze::summarize(example_df, var_list = gender, data_type = 'categorical')
+
+# Visualize data
+# 
+analyze::graph(example_df,  cat_var = example_df$gender,
+               title = "Distribution of gender",
+               xlab = "Gender",
+               fill = "Gender")
 ```
 
